@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapter 02-10</title>
+        <meta charset="utf-8"/>
+    </head>
+    
+    <body>
+        <p>Open the developer console, please.</p>
+    
+        <script>
+/*
+ * Get a number
+ * Set the number of steps to 0
+ * Print the starting number
+ * As long as the number is not equal to 1
+ *   - if the number is odd, multiply by three and add one
+ *   - otherwise it's even; divide it by two
+ *   - print the result
+ *   - add one to the number of steps
+ * Print the final number of steps
+ */
+let number = parseInt(prompt("Enter an integer greater than zero."));
+console.log("Number starts at " + number);
+
+let steps = 0;
+
+while (number != 1) {
+    if (number % 2 == 0) {
+        number = number / 2;
+    } else {
+        number = number * 3 + 1;
+    }
+    console.log("Number is now " + number);
+    steps = steps + 1;
+}
+console.log("Number of steps: " + steps);
+        </script>
+    </body>
+</html>

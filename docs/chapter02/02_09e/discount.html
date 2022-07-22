@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapter 02-06</title>
+        <meta charset="utf-8"/>
+    </head>
+    
+    <body>
+        <p>Open the developer console, please.</p>
+    
+        <script>
+/*
+ * This program determines a discount depending on customer's age.
+ * It does the following:
+ *   - Prompt the customer for the item price.
+ *   - Prompt the customer for their age. 
+ *   - If the age is between 21 and 65
+ *       - they get a 5% discount (0.05)
+ *   - Otherwise:
+ *       - they get a 10% discount (0.10)
+ *   - Calculate the discounted price.
+ *   - Print the discounted price.
+ */
+let price = parseFloat(prompt("Enter the item price"));
+let age = parseInt(prompt("Enter your age in years"));
+let discount = 0.0;
+
+if (age <= 21 || age >= 65) {
+    discount = 0.10;
+} else {
+    discount = 0.05;
+}
+
+console.log("You get " + (discount * 100) + "% off.");
+let discountPrice = price * (1.0 - discount);
+
+console.log("Your discounted price is $" + discountPrice);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapter 03-06</title>
+        <meta charset="utf-8"/>
+    </head>
+    
+    <body>
+        <p>Open the developer console, please.</p>
+    
+        <script>
+/*
+ * Get the loan amount, number of years, and annual interest rate.
+ * Calculate the monthly payment using formula:
+ *    (rate * principal) / (1 - (1 + rate) ** -months
+ * Print the payment amount
+ * calculate principal and interest part of first payment
+ * as long as interest is greater than the principal
+ *   subtract payment from principal
+ *   recalculate principal and interest part of payment
+ * Report the month at which principal becomes >= interest
+ * 
+ */
+let principal = parseFloat(prompt("Enter amount of loan"));
+let years = parseFloat(prompt("Enter number of years"));
+let apr = parseFloat(prompt("Enter annual percentage rate"));
+
+let monthlyRate = (apr / 100) / 12; // convert to decimal
+let months = years * 12;
+
+let payment = (monthlyRate * principal) / (1 - Math.pow(1 + monthlyRate, -months));
+console.log("Monthly payment is $" + payment);
+
+let monthNumber = 0;
+let interestPart = 0;
+let principalPart = 0;
+
+do {
+    interestPart = principal * monthlyRate;
+    principalPart = payment - interestPart;
+    principal = principal - principalPart;
+    monthNumber++;
+    console.log("month " + monthNumber + " Interest: $" + interestPart
+        + " Principal: $" + principalPart);
+} while (interestPart > principalPart);
+
+console.log("The break-even point happens at month " + monthNumber);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapter 02-04</title>
+        <meta charset="utf-8"/>
+    </head>
+    
+    <body>
+        <p>Open the developer console, please.</p>
+    
+        <script>
+/*
+ * This program will simulate a withdrawal from a bank account.
+ * It does the following:
+ *   - Prompt the customer for the current balance (and convert to float).
+ *   - Prompt the customer for the amount to withdraw (and convert to float).
+ *   - If the amount is less than or equal to the balance:
+ *       - subtract the amount from the balance
+ *       - print the updated balance
+ *   - Otherwise:
+ *       - tell the customer they can't withdraw more than their balance.
+ *   - Print a "Thank you for banking with us" message
+ */
+let balance = parseFloat(prompt("Enter current balance"));
+let amount = parseFloat(prompt("Enter amount to withdraw"));
+
+if (amount <= balance) {
+    balance = balance - amount;
+    console.log("Your balance is now $" + balance + ".");
+} else {
+    console.log("Cannot withdraw $" + amount + ".");
+    console.log("You have only $" + balance + ", sorry.");
+}
+console.log("Thank you for banking with us.");
+
+        </script>
+    </body>
+</html>

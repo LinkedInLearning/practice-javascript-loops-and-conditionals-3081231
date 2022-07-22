@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapter 02-02</title>
+        <meta charset="utf-8"/>
+    </head>
+    
+    <body>
+        <p>Open the developer console, please.</p>
+    
+        <script>
+/*
+ * This program will simulate a deposit to a bank account.
+ * It does the following:
+ *   - Prompt the customer for the current balance (and convert to float).
+ *   - Prompt the customer for the amount to deposit (and convert to float).
+ *   - If the amount is greater than or equal to 10,000, tell the customer
+ *       "Funds may be on hold for three days."
+ *   - Add the deposit amount to the balance.
+ *   - Report the updated balance to the customer.
+ */
+let balanceString = prompt("Enter current balance");
+let balance = parseFloat(balanceString);
+
+let amountString = prompt("Enter amount to deposit");
+let amount = parseFloat(amountString);
+
+if (amount >= 10000) {
+    console.log("Funds may be on hold for three days.");
+}
+
+balance = balance + amount;
+console.log("Balance is now $" + balance);
+
+
+        </script>
+    </body>
+</html>

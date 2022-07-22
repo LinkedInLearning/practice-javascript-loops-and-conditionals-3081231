@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Binary to Decimal</title>
+        <meta charset="utf-8"/>
+    </head>
+    
+    <body>
+        <p>Open the developer console, please.</p>
+    
+        <script>
+/*
+ * Read an input string consisting of ones and zeros, and
+ * convert it to a decimal, using an indexed for loop.
+ */
+
+let binaryStr = prompt("Enter a binary number");
+
+let decimal = 0;
+let factor = 1;
+let valid = true;
+
+for (let index = binaryStr.length - 1; index >= 0; index--) {
+    let chr = binaryStr[index];
+    if (chr == "0" || chr == "1") {
+        let digit = parseInt(chr);
+        decimal = decimal + digit * factor;
+        factor = factor * 2;
+    } else if (chr != " ") {
+        console.log(chr + " is not allowed. Use only 0, 1, and blanks.");
+        valid = false;
+    } else {
+        // it's a blank; no need to do anything
+    }
+}
+
+if (valid) {
+    console.log(binaryStr + " in binary is " + decimal + " in decimal.");
+} else {
+    console.log("Invalid input.");
+}
+
+        </script>
+    </body>
+</html>

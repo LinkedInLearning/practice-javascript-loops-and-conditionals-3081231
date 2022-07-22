@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapter 02-10</title>
+        <meta charset="utf-8"/>
+    </head>
+    
+    <body>
+        <p>Open the developer console, please.</p>
+    
+        <script>
+/*
+ * Get current balance
+ * Prompt for D (deposit) or W (withdrawal), in either upper or lower case.
+ * if (it's a deposit)
+ *      ask for the amount;
+ *      if (amount >= 0) {
+ *          if (amount >= 10,000) {
+ *              "funds may be on hold";
+ *          }
+ *          add amount to balance;
+ *          display balance;
+ *      } else {
+ *          "Invalid amount; must be >= 0";
+ *      }
+ * } else if (it's a withdrawal) {
+ *      ask for the amount;
+ *      if (amount >= 0 and <= balance) {
+ *          subtract amount from balance;
+ *          display balance;
+ *      }
+ */
+let balance = parseFloat(prompt("Enter current balance"));
+
+let transaction = prompt("Enter D for deposit or W for withdrawal");
+if (transaction == "D" || transaction == "d") {
+    console.log("Deposit happens here");
+} else if (transaction == "W" || transaction == "w") {
+    console.log("Withdrawal happens here");
+} else {
+    console.log("Invalid transaction. Use D for deposit or W for withdrawal.");
+}
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapter 03-06</title>
+        <meta charset="utf-8"/>
+    </head>
+    
+    <body>
+        <p>Open the developer console, please.</p>
+    
+        <script>
+/*
+ * Get the loan amount, number of years, and annual interest rate.
+ * Calculate the monthly payment using formula:
+ *    (rate * principal) / (1 - (1 + rate) ** -months
+ * Print the payment amount
+ * calculate principal and interest part of first payment
+ * as long as interest is greater than the principal
+ *   subtract payment from principal
+ *   recalculate principal and interest part of payment
+ * Report the month at which principal becomes >= interest
+ * 
+ */
+let number = parseInt(prompt("Enter an integer greater than zero."));
+console.log("Number starts at " + number);
+
+let steps = 0;
+
+while (number != 1) {
+    if (number % 2 == 0) {
+        number = number / 2;
+    } else {
+        number = number * 3 + 1;
+    }
+    console.log("Number is now " + number);
+    steps = steps + 1;
+}
+console.log("Number of steps: " + steps);
+        </script>
+    </body>
+</html>
