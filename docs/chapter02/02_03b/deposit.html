@@ -22,17 +22,7 @@
  *   - Add the deposit amount to the balance.
  *   - Report the updated balance to the customer.
  */
-let balanceString = prompt("Enter current balance");
-let balance = parseFloat(balanceString);
 
-let amount = parseFloat(prompt("Enter amount to deposit"));
-
-if (amount >= 10000) {
-    console.log("Funds may be on hold for three days.");
-}
-
-balance = balance + amount;
-console.log("Balance is now $" + balance);
         </script>
     </body>
 </html>
