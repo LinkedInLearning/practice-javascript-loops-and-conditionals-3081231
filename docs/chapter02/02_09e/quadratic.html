@@ -24,6 +24,23 @@
  *        (-b + sqrt(b^2 - 4ac)) / 2a and
  *        (-b - sqrt(b^2 - 4ac) / 2a
  */
+let a = parseFloat(prompt("Enter value for a"));
+let b = parseFloat(prompt("Enter value for b"));
+let c = parseFloat(prompt("Enter value for c"));
+
+console.log(a + "x^2 + " + b + "x + " + c + " = 0");
+
+let discriminant = b * b - 4 * a * c;
+if (discriminant < 0) {
+    console.log("There are no real number solutions to this equation.");
+} else if (discriminant == 0) {
+    let root = -b / (2 * a);
+    console.log("The solution is " + root + ".");
+} else {
+    let root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+    let root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+    console.log("The solutions are " + root1 + " and " + root2 + ".");
+}
         </script>
-    </body>
+     </body>
 </html>
