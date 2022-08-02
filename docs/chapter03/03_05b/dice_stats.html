@@ -25,6 +25,29 @@
      *   - Add one to number of trials
      * Calculate and display average number of rolls
      */
+
+let nTrials = 0;
+let totalRolls = 0;
+
+while (nTrials < 10000) {
+  let nRolls = 0;
+  let finished = false;
+
+  while (!finished) {
+    let dice1 = Math.floor(Math.random() * 6 + 1);
+    let dice2 = Math.floor(Math.random() * 6 + 1);
+    // console.log("Roll #" + nRolls + ": " + dice1 + " and " + dice2);
+    nRolls = nRolls + 1;
+    if (dice1 == dice2) {
+      finished = true;
+    }
+  }
+  // console.log("Number of rolls: " + nRolls);
+  nTrials = nTrials + 1;
+  totalRolls = totalRolls + nRolls;
+}
+let average = totalRolls / 10000;
+console.log("Average number of rolls is " + average);
   </script>
 </body>
 
