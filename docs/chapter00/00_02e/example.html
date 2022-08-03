@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chapter 00-02</title>
+  <meta charset="utf-8" />
+  <script src="../../display.js"></script>
+</head>
+
+<body>
+  <p>Output appears below.</p>
+  <hr />
+  <p id="output"></p>
+
+  <script>
+    /*
+     * This program will ask the user for their name,
+     * a unit price for a product, and the quantity desired.
+     * It will then print a personalized message that tells
+     * them how much their purchase will cost.
+     */
+
+    let name = prompt("What is your name?");
+    let unitPrice = parseFloat(prompt("Enter the unit price"));
+    let quantity = parseInt(prompt("Enter the quantity desired"));
+
+    let totalPrice = unitPrice * quantity;
+
+    display("Thanks, " + name + ".");
+    display("The total price is $" + totalPrice + ".");
+
+  </script>
+</body>
+
+</html>
