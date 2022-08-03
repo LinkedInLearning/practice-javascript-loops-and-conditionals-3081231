@@ -34,7 +34,7 @@
         let payment = (monthlyRate * principal) /
             (1 - Math.pow(1 + monthlyRate, -months));
         display("Monthly payment is $" + payment.toFixed(2));
-
+display(payment);
         let monthNumber = 0;
         let interestPart = 0;
         let principalPart = 0;
