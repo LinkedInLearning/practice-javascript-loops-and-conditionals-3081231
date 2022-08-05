@@ -4,10 +4,13 @@
 <head>
     <title>Chapter 02-05</title>
     <meta charset="utf-8" />
+      <script src="../../display.js"</script>
 </head>
 
 <body>
-    <p>Open the developer console, please.</p>
+      <p>Output appears below.</p>
+      <hr />
+      <p id="output"></p>
 
     <script>
         /*
@@ -30,13 +33,13 @@
 
         if (amount <= balance) {
             balance = balance - amount;
-            console.log("Your balance is now $" + balance + ".");
+            display("Your balance is now $" + balance + ".");
         } else {
-            console.log("Cannot withdraw $" + amount + ".");
-            console.log("You have only $" + balance + ", sorry.");
+            display("Cannot withdraw $" + amount + ".");
+            display("You have only $" + balance + ", sorry.");
         }
 
-        console.log("Thank you for banking with us.");
+        display("Thank you for banking with us.");
     </script>
 </body>
 

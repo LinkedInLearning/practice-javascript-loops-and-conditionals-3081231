@@ -3,10 +3,13 @@
     <head>
         <title>Chapter 02-07</title>
         <meta charset="utf-8"/>
+      <script src="../../display.js"</script>
     </head>
     
     <body>
-        <p>Open the developer console, please.</p>
+      <p>Output appears below.</p>
+      <hr />
+      <p id="output"></p>
     
         <script>
 /*
@@ -31,10 +34,10 @@ if (age <= 21 || age >= 65) {
     discount = 0.05;
 }
 
-console.log("You get " + (discount * 100) + "% off.");
+display("You get " + (discount * 100) + "% off.");
 let discountPrice = price * (1.0 - discount);
 
-console.log("Your discounted price is $" + discountPrice);
+display("Your discounted price is $" + discountPrice);
         </script>
     </body>
 </html>

@@ -3,10 +3,13 @@
     <head>
         <title>Chapter 02-11</title>
         <meta charset="utf-8"/>
+      <script src="../../display.js"</script>
     </head>
     
     <body>
-        <p>Open the developer console, please.</p>
+      <p>Output appears below.</p>
+      <hr />
+      <p id="output"></p>
     
         <script>
 /*
@@ -35,12 +38,12 @@ let balance = parseFloat(prompt("Enter current balance"));
 
 let transaction = prompt("Enter D for deposit or W for withdrawal");
 if (transaction == "D" || transaction == "d") {
-    console.log("Deposit happens here");
+    display("Deposit happens here");
 } else if (transaction == "W" || transaction == "w") {
-    console.log("Withdrawal happens here");
+    display("Withdrawal happens here");
 } else {
-    console.log("Invalid transaction: " + transaction);
-    console.log("Use D for deposit or W for withdrawal.");
+    display("Invalid transaction: " + transaction);
+    display("Use D for deposit or W for withdrawal.");
 }
         </script>
     </body>

@@ -3,10 +3,13 @@
     <head>
         <title>Chapter 03-12</title>
         <meta charset="utf-8"/>
+      <script src="../../display.js"</script>
     </head>
     
     <body>
-        <p>Open the developer console, please.</p>
+      <p>Output appears below.</p>
+      <hr />
+      <p id="output"></p>
     
         <script>
 /*
@@ -37,8 +40,8 @@ for (let index = 0; index < sales.length; index++) {
     }
 }
 
-console.log("Minimum sales $" + minValue + "K in month " + minIndex);
-console.log("Maximum sales $" + maxValue + "K in month " + maxIndex);
+display("Minimum sales $" + minValue + "K in month " + minIndex);
+display("Maximum sales $" + maxValue + "K in month " + maxIndex);
 
 
         </script>

@@ -4,10 +4,13 @@
 <head>
   <title>Chapter 03-05</title>
   <meta charset="utf-8" />
+      <script src="../../display.js"</script>
 </head>
 
 <body>
-  <p>Open the developer console, please.</p>
+      <p>Output appears below.</p>
+      <hr />
+      <p id="output"></p>
 
   <script>
     /*
@@ -36,18 +39,18 @@ while (nTrials < 10000) {
   while (!finished) {
     let dice1 = Math.floor(Math.random() * 6 + 1);
     let dice2 = Math.floor(Math.random() * 6 + 1);
-    // console.log("Roll #" + nRolls + ": " + dice1 + " and " + dice2);
+    // display("Roll #" + nRolls + ": " + dice1 + " and " + dice2);
     nRolls = nRolls + 1;
     if (dice1 == dice2) {
       finished = true;
     }
   }
-  // console.log("Number of rolls: " + nRolls);
+  // display("Number of rolls: " + nRolls);
   nTrials = nTrials + 1;
   totalRolls = totalRolls + nRolls;
 }
 let average = totalRolls / 10000;
-console.log("Average number of rolls is " + average);
+display("Average number of rolls is " + average);
   </script>
 </body>
 

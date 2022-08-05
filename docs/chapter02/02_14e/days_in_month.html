@@ -3,10 +3,13 @@
     <head>
         <title>Chapter 02-14</title>
         <meta charset="utf-8"/>
+      <script src="../../display.js"</script>
     </head>
     
     <body>
-        <p>Open the developer console, please.</p>
+      <p>Output appears below.</p>
+      <hr />
+      <p id="output"></p>
     
         <script>
 /*
@@ -51,9 +54,9 @@ switch (month) {
 }
 
 if (days > 0) {
-    console.log("Month number " + month + " in " + year + " has " + days + " days.");
+    display("Month number " + month + " in " + year + " has " + days + " days.");
 } else {
-    console.log("Month is not in range 1-12");
+    display("Month is not in range 1-12");
 }
         </script>
     </body>

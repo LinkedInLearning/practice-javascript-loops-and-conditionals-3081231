@@ -4,10 +4,13 @@
 <head>
     <title>Chapter 02-03</title>
     <meta charset="utf-8" />
+      <script src="../../display.js"</script>
 </head>
 
 <body>
-    <p>Open the developer console, please.</p>
+        <p>Output appears below.</p>
+        <hr />
+        <p id="output"></p>
 
     <script>
         /*
@@ -29,11 +32,11 @@
         let amount = parseFloat(prompt("Enter amount to deposit"));
 
         if (amount >= 10000) {
-            console.log("Funds may be on hold for three days.");
+            display("Funds may be on hold for three days.");
         }
 
         balance = balance + amount;
-        console.log("Balance is now $" + balance);
+        display("Balance is now $" + balance);
     </script>
 </body>
 

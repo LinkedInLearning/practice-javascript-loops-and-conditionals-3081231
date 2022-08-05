@@ -3,10 +3,13 @@
     <head>
         <title>Chapter 03-18: Triangle of Plus Signs</title>
         <meta charset="utf-8"/>
+      <script src="../../display.js"</script>
     </head>
     
     <body>
-        <p>Open the developer console, please.</p>
+      <p>Output appears below.</p>
+      <hr />
+      <p id="output"></p>
     
         <script>
 /*
@@ -25,7 +28,7 @@ let nRows = 0;
 do {
     nRows = parseInt(prompt("Enter number of rows (1-10)"));
     if (nRows < 1 || nRows > 10) {
-        console.log("Please enter a number from 1 to 10 (inclusive)");
+        display("Please enter a number from 1 to 10 (inclusive)");
     }
 } while (nRows < 1 || nRows > 10);
 
@@ -40,7 +43,7 @@ for (let row = 0; row < nRows; row++) {
     for (let plusCount = 0; plusCount < nPlusSigns; plusCount++) {
         rowString = rowString + "+";
     }
-    console.log(rowString);
+    display(rowString);
 }
         </script>
     </body>

@@ -3,10 +3,13 @@
     <head>
         <title>Chapter 03-16</title>
         <meta charset="utf-8"/>
+      <script src="../../display.js"</script>
     </head>
     
     <body>
-        <p>Open the developer console, please.</p>
+      <p>Output appears below.</p>
+      <hr />
+      <p id="output"></p>
     
         <script>
 /*
@@ -23,7 +26,7 @@ for (const chr of binaryStr) {
         let digit = parseInt(chr);
         decimal = decimal * 2 + digit;
     } else if (chr != " ") {
-        console.log(chr + " is not allowed. Use only 0, 1, and blanks.");
+        display(chr + " is not allowed. Use only 0, 1, and blanks.");
         valid = false;
     } else {
         // it's a blank; no need to do anything
@@ -31,9 +34,9 @@ for (const chr of binaryStr) {
 }
 
 if (valid) {
-    console.log(binaryStr + " in binary is " + decimal + " in decimal.");
+    display(binaryStr + " in binary is " + decimal + " in decimal.");
 } else {
-    console.log("Invalid input.");
+    display("Invalid input.");
 }
 
         </script>
