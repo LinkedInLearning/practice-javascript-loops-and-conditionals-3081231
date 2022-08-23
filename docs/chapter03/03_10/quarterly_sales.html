@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chapter 03-09</title>
+  <meta charset="utf-8" />
+  <script src="../../display.js"></script>
+</head>
+
+<body>
+  <p>Output appears below.</p>
+  <hr />
+  <p id="output"></p>
+
+  <script>
+ let total = 0.0;
+
+ for (let quarter = 0; quarter < 4; quarter++) {
+    let sales = parseFloat(prompt("Enter sales for quarter " +
+      (quarter + 1)));
+    total = total + sales;
+  }
+
+  display("Total annual sales: $" + total.toFixed(2));
+
+  </script>
+</body>
+
+</html>
