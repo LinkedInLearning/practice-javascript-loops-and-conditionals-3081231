@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chapter 03-01</title>
+  <meta charset="utf-8" />
+  <script src="../../display.js"></script>
+</head>
+
+<body>
+  <p>Output appears below.</p>
+  <hr />
+  <p id="output"></p>
+
+  <script>
+  let years = 0;
+
+  do {
+    years = parseInt(prompt("Enter age (> 0)"));
+  } while (years <= 0);
+
+  let days = years * 365;
+  display("That's about " + days + " days."); 
+  </script>
+</body>
+
+</html>
