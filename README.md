@@ -1,36 +1,16 @@
-# COURSENAME
-This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
+# Practice It: JavaScript Loops and Conditionals 
+This is the repository for the LinkedIn Learning course Practice It: JavaScript Loops and Conditionals . The full course is available from [LinkedIn Learning][lil-course-url].
 
-![course-name-alt-text][lil-thumbnail-url] 
+![Practice It: JavaScript Loops and Conditionals ][lil-thumbnail-url]
 
-_See the readme file in the main branch for updated instructions and information._
-## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+In this course, David Eisenberg gives you the chance to test your skills, find your focus, and work through problems that are just challenging enough to help you achieve the next level of JavaScript development. David goes over working with conditionals and putting it all together. He steps through tasks like using the switch statement. David also dives into while and do-while loops, with challenges to help you practice. He explains the for loop, then introduces challenges like calculating minimum and maximum sales and more.<br><br>This course is integrated with GitHub Codespaces, an instant cloud developer environment that offers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub Codespaces, you can get hands-on practice from any machine, at any time—all while using a tool that you’ll likely encounter in the workplace. Check out the [Using GitHub Codespaces with this course][gcs-video-url] video to learn how to get started.
 
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
+### Instructor
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
+J. David Eisenberg
 
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/j-david-eisenberg).
 
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
-
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
-
-
-[0]: # (Replace these placeholder URLs with actual course URLs)
-
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
-
+[lil-course-url]: https://www.linkedin.com/learning/practice-it-javascript-loops-and-conditionals
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQHZcW4-tcsdxg/learning-public-crop_675_1200/0/1666989998311?e=1667952000&v=beta&t=J3MzAcqtVIyPO3qZFmbe48Gfh9Y9Ypksy19_jWAf92w
+[gcs-video-url]: https://www.linkedin.com/learning/practice-it-javascript-loops-and-conditionals/using-github-codespaces-with-this-course
