@@ -1,5 +1,5 @@
 # Practice It: JavaScript Loops and Conditionals 
-This is the repository for the LinkedIn Learning course Practice It: JavaScript Loops and Conditionals . The full course is available from [LinkedIn Learning][lil-course-url].
+This is the repository for the LinkedIn Learning course Practice It: JavaScript Loops and Conditionals. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![Practice It: JavaScript Loops and Conditionals ][lil-thumbnail-url]
 
