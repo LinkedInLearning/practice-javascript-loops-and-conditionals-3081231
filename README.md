@@ -1,7 +1,7 @@
 # Practice It: JavaScript Loops and Conditionals 
 This is the repository for the LinkedIn Learning course Practice It: JavaScript Loops and Conditionals. The full course is available from [LinkedIn Learning][lil-course-url].
 
-![Practice It: JavaScript Loops and Conditionals ][lil-thumbnail-url]
+![1666989998311](https://user-images.githubusercontent.com/28540243/200744848-8c208f4c-0396-4746-b821-82461a932d8b.jpeg)
 
 In this course, David Eisenberg gives you the chance to test your skills, find your focus, and work through problems that are just challenging enough to help you achieve the next level of JavaScript development. David goes over working with conditionals and putting it all together. He steps through tasks like using the switch statement. David also dives into while and do-while loops, with challenges to help you practice. He explains the for loop, then introduces challenges like calculating minimum and maximum sales and more.<br><br>This course is integrated with GitHub Codespaces, an instant cloud developer environment that offers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub Codespaces, you can get hands-on practice from any machine, at any time—all while using a tool that you’ll likely encounter in the workplace. Check out the [Using GitHub Codespaces with this course][gcs-video-url] video to learn how to get started.
 
